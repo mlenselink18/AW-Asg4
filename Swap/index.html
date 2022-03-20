@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Swap</title>
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+    <link href="../styles/swap.css" rel="stylesheet" type="text/css" />
+</head>
+<header>
+    <h1>Ram Tap Combined Tests</h1>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Expand/index.html">Expand/Collapse</a></li>
+        <li><a href="../WorkThrough/index.html">Work Through</a></li>
+        <li><a href="../Swap/index.html">Image Swap</a></li>
+    </ul>
+</nav>
+<br>
+<body>
+    <main>
+        <p>Click on an image to enlarge.</p>
+        <ul id="image_list">
+            <li>
+                <a href="../images_riding/h1.jpg" title="Start of a jump">
+                    <img src="../thumbnails/t1.jpg" alt="Start of a jump">
+                </a>
+            </li>
+            <li>
+                <a href="../images_riding/h2.jpg" title="End of a jump">
+                    <img src="../thumbnails/t2.jpg" alt="End of a jump">
+                </a>
+            </li>
+            <li>
+                <a href="../images_riding/h3.jpg" title="Look at them go!">
+                    <img src="../thumbnails/t3.jpg" alt="Look at them go!">
+                </a>
+            </li>
+            <li>
+                <a href="../images_riding/h4.jpg" title="Majestic with feet in the air">
+                    <img src="../thumbnails/t4.jpg" alt="Majestic with feet in the air">
+                </a>
+            </li>
+            <li>
+                <a href="../images_riding/h5.jpg" title="Don't drop your rider!">
+                    <img src="../thumbnails/t5.jpg" alt="Don't drop your rider!">
+                </a>
+            </li>
+            <li>
+                <a href="../images_riding/h6.jpg" title="A classic show pose">
+                    <img src="../thumbnails/t6.jpg" alt="A classic show pose">
+                </a>
+            </li>
+        </ul>
+        <h2 id="caption">Start of a jump</h2>
+        <p><img id="main_image" src="../images_riding/h1.jpg"></p>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous"></script>
+    <script src="Swap.js"></script>
+</body>
+</html>

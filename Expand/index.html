@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Expand and Collapse</title>
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+    <link href="../styles/expand.css" rel="stylesheet" type="text/css" />
+</head>
+<header>
+    <h1>Expand and Collapse Text</h1>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Expand/index.html">Expand/Collapse</a></li>
+        <li><a href="../WorkThrough/index.html">Work Through</a></li>
+        <li><a href="../Swap/index.html">Image Swap</a></li>
+    </ul>
+</nav>
+<br>
+<body>
+    <main> 
+        <h1>Murach's HTML5 and CSS3 (3rd Edition)</h1>
+        <h2>Book Description</h2>
+        <p id="paragraphDesc">With this book, you can teach yourself how to design web pages the way the professionals do,
+            by using HTML and CSS in tandem to structure and format the page content. It begins with a 
+            crash course that teaches you more about HTML  and CSS than you can learn from most full 
+            books. That includes a chapter on Responsive Web Design that shows you how to build 
+            responsive websites that will look and work right on all devices, from phones to tablets to 
+            desktop computers.        
+        </p>
+        <p class="hide">
+            After that, this book shows you how to enhance your web pages with features like images, 
+            forms with built-in data validation, and audio and video clips.  You'll also learn how to use JavaScript and jQuery to 
+            add features like image rollovers, image swaps, and slide shows. You'll learn how to use jQuery UI and  jQuery plugins to 
+            add features like accordions, tabs, carousels, and slide shows.  And you'll learn how to use jQuery Mobile to develop 
+            separate websites for mobile  devices.
+        </p>
+        <a href="#" id="expandDescription">Show More</a>
+        <h2>About the Authors</h2>
+        <p>Anne Boehm has over 30 years of experience as an enterprise programmer. She got started 
+            with Visual Basic in the days of VB5 and has been programming on .NET since  its inception. 
+            She added C# to her programming repertoire in the mid-2000s, and she's authored or co-
+            authored our books on Visual Basic, C#, ADO.NET, ASP.NET, and HTML5/CSS3.
+        </p>
+        <p class="hide">
+            Zak Ruvalcaba has been researching, designing, and developing for the web since 1995.
+            His skill set ranges from HTML5/CSS3 and JavaScript/jQuery to .NET with VB and C#, and he's created web
+            applications for companies like HP, Toshiba, IBM,  Gateway, Intuit, Peachtree, Dell, and Microsoft. He has
+            authored or co-authored our books on HTML5/CSS3, jQuery, and Dreamweaver CC.
+        </p>
+        <a href="#" id="expandAuthors">Show More</a>
+        <h2>Who This Book is For</h2>
+        <p>
+            Due to our unique presentation methods and this book's modular organization, this is the right 
+            book for any web developer who wants to use HTML5 and CSS3 effectively. That includes:
+        </p>
+            <ul>
+                <li>
+                    budding web developers
+                </li>
+                <li>
+                    web developers who haven't yet upgraded their websites to HTML5 and CSS3
+                </li>
+                <li>
+                    web developers who need to expand and enhance their skillsets 
+                </li>
+                <li class="hide">
+                    As we see it, mastering HTML5 and CSS3 will make any web developer at any level more effective.
+                </li>
+            </ul>
+        <a href="#" id="expandList">Show More</a>
+    </main>
+    <script src="Expand.js"></script>
+</body>
+</html>
